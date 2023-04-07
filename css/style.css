@@ -456,6 +456,7 @@ body {
 	/* height: 100vh;
     width: 100%; */
 	flex-direction: column;
+	background-color: #e7f4ff;
 }
 
 .title {
