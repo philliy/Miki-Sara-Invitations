@@ -473,6 +473,12 @@ body {
 	z-index: -1;
     position:relative;
 }
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 10px;
+	overflow: visible;
+}
 
 .venue {
 	width: auto;
@@ -488,13 +494,6 @@ body {
 .venue a {
 	text-decoration: none;
 	color: #fff;
-}
-
-.container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border-radius: 10px;
-	overflow: visible;
 }
 
 .block {
