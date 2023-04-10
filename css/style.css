@@ -365,6 +365,12 @@ img {
 	}
 }
 
+@media (max-width:480px) {
+	img {
+		max-width: 50%;
+	}
+}
+
 .top-right-decoration {
 	position: absolute;
 	top: 0;
