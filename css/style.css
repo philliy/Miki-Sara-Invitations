@@ -344,7 +344,7 @@
 }
 
 .sakura {
-	background: #e475a9;
+	background: #674ea7;
 }
 
 
@@ -456,7 +456,6 @@ body {
 	/* height: 100vh;
     width: 100%; */
 	flex-direction: column;
-	background-color: #e7f4ff;
 }
 
 .title {
@@ -467,16 +466,9 @@ body {
 	width: auto;
 	height: auto;
 	padding: 20px;
-	background-color: #bcd8df;
+	background-color: #eee;
 	border-radius: 20px;
 	font-size: 16px;
-	
-}
-.container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border-radius: 10px;
-	overflow: visible;
 }
 
 .venue {
@@ -494,6 +486,7 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -572,7 +565,7 @@ a {
 }
 
 .twitter {
-	color: #2f17e3;
+	color: #874562;
 }
 
 .music {
@@ -584,4 +577,3 @@ a {
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
-
