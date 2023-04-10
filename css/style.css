@@ -355,21 +355,16 @@ body {
 }
 
 img {
-	max-width: 100%;
+	max-width: 80%;
 	height: auto;
 }
 
 @media (max-width:900px) {
 	img {
-		max-width: 30%;
+		max-width: 50%;
 	}
 }
 
-@media (max-width:480px) {
-	img {
-		max-width: 70%;
-	}
-}
 
 .top-right-decoration {
 	position: absolute;
