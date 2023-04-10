@@ -386,7 +386,7 @@ img {
 	font-style: normal;
 	font-size: 60px;
 	margin: 32px 0;
-	color: #d0dff3;
+	color: #674ea7;
 }
 
 .title h2 {
@@ -396,7 +396,7 @@ img {
 	margin: 0;
 	padding: 0;
 	font-size: 24px;
-	color: #7eeaec;
+	color: #e25c67;
 	line-height: 1;
 }
 
@@ -420,7 +420,7 @@ img {
 }
 
 .title p {
-	color: #97d9eb;
+	color: #564861;
 	margin: 30px 0 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
