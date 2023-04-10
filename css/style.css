@@ -492,6 +492,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	border-radius: 10px;
+	z-index: -1;
+    position:relative;
 }
 
 .block {
