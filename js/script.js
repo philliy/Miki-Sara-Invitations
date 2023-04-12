@@ -5,7 +5,7 @@
 })(jQuery);
 
 
-$(document).on('load', function(){
+$(document).on('click', function(){
     document.getElementById("my_audio").play();
     console.log('we are one');
 });
