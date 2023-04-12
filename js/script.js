@@ -7,7 +7,7 @@
 
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
+    console.log('we are one');
 });
 
 // Set the date we're counting down to
