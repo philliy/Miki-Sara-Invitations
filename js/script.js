@@ -11,7 +11,7 @@ $(document).on('click', function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 22, 2024 12:00:00").getTime();
+var countDownDate = new Date("Nov 14, 2026 22:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -70,9 +70,9 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: ሚያዚያ 14 2015 April 22.2023', styles);
+console.log('\n\n%c SAVE THE DATE: ኅዳር 5 2019 Nov 14.2026', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Abate Nicola & Hailemariam', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards: Matiyas & Deborah', styles1, styles2);
 
 console.log(
     `%c Thanks for your best wishes  !\n\n`,
