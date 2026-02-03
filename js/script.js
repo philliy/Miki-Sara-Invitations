@@ -34,7 +34,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "ይሆዋን ለ ታላቅ ስጦታው እናመሰግናለን 👏👏👏!";
+        document.getElementById("time").innerHTML = "የምወደውን ሰው አገኘው መኃልየ መኃልይ 3:4 👏👏👏!";
     }
 }, 1000);
 
