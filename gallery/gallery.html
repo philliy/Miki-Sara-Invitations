@@ -77,6 +77,8 @@
    <div id="image-viewer">
       <span class="close">&times;</span>
       <img class="modal-content" id="full-image">
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
    </div>
    <style>
       /* Style the Image Used to Trigger the Modal */
@@ -144,6 +146,42 @@
          cursor: pointer;
       }
 
+      /* Next & previous buttons */
+      .prev,
+      .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         padding: 16px;
+         margin-top: -50px;
+         color: white;
+         font-weight: bold;
+         font-size: 20px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+         -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+      }
+
+      /* Position the "prev button" to the left */
+      .prev {
+         left: 0;
+         border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+         background-color: rgba(0, 0, 0, 0.8);
+      }
+
       @media only screen and (max-width: 700px) {
          .modal-content {
             width: 100%;
@@ -161,14 +199,39 @@
    <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
    <script src="./gallery.js"></script>
    <script>
+      var currentImageIndex = 0;
+      var images = $(".galary img");
 
       $(".galary img").click(function () {
+         currentImageIndex = $(".galary img").index(this);
          $("#full-image").attr("src", $(this).attr("src"));
          $('#image-viewer').show();
       });
 
+      $(".prev").click(function () {
+         currentImageIndex--;
+         if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1;
+         }
+         $("#full-image").attr("src", $(images[currentImageIndex]).attr("src"));
+      });
+
+      $(".next").click(function () {
+         currentImageIndex++;
+         if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+         }
+         $("#full-image").attr("src", $(images[currentImageIndex]).attr("src"));
+      });
+
       $("#image-viewer .close").click(function () {
          $('#image-viewer').hide();
+      });
+
+      $("#image-viewer").click(function (e) {
+         if (e.target.id == "image-viewer") {
+            $('#image-viewer').hide();
+         }
       });
    </script>
 
